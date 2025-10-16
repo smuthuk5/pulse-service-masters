@@ -1,39 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulse Service Masters</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pulse Service Masters — Lawn mowers & Garden Equipment</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Pulse Service Masters</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to Pulse Service Masters</h2>
-            <p>Your trusted partner for sales and service of lawn mowers and garden tools.</p>
-        </section>
-        <section>
-            <h3>Our Products</h3>
-            <ul>
-                <li>Brush Cutter</li>
-                <li>Chain Saw</li>
-                <li>Hedge Trimmer</li>
-                <li>Lawn Mower</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Contact us: 98944 71387 | premraj1082@gmail.com</p>
-        <p>Address: Plot No 216A, 3rd St, Kakkan Nagar, Adambakkam, Chennai, Tamil Nadu 600088</p>
-    </footer>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <img src="assets/images/logo.svg" alt="Pulse Service Masters logo" class="logo" />
+        <h1 class="site-title">Pulse Service Masters</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2>Sales & servicing for lawn mowers and garden tools</h2>
+          <p>We sell, maintain and repair quality lawn equipment — lawn mowers, brush cutters, chainsaws, hedge trimmers and more.</p>
+          <div class="hero-ctas">
+            <a href="products.html" class="btn">Shop Products</a>
+            <a href="services.html" class="btn btn-secondary">Book Service</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/mower.svg" alt="Lawn mower">
+        </div>
+      </div>
+    </section>
+
+    <section class="container preview-products">
+      <h3>Featured Products</h3>
+      <div class="cards product-preview">
+        <article class="card product">
+          <img src="assets/images/brush-cutter.svg" alt="Brush cutter">
+          <h4>Brush Cutter</h4>
+          <p>Powerful and durable — ideal for tough grass and undergrowth.</p>
+        </article>
+
+        <article class="card product">
+          <img src="assets/images/hedge-trimmer.svg" alt="Hedge trimmer">
+          <h4>Hedge Trimmer</h4>
+          <p>Precise cutting for neat hedges and shrubs.</p>
+        </article>
+
+        <article class="card product">
+          <img src="assets/images/mower.svg" alt="Lawn mower">
+          <h4>Lawn Mower</h4>
+          <p>Reliable lawn mowers for small and large gardens.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Pulse Service Masters</h4>
+        <p><strong>Email:</strong> <a href="mailto:premraj1082@gmail.com">premraj1082@gmail.com</a></p>
+        <p><strong>Phone:</strong> 98944 71387</p>
+        <p><strong>Address:</strong> Plot No 216A, 3rd St, Kakkan Nagar, Adambakkam, Chennai, Tamil Nadu 600088</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; <span id="year"></span> Pulse Service Masters — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
