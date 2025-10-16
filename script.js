@@ -1,1 +1,0 @@
-document.getElementById('year')?.textContent = new Date().getFullYear();const form = document.getElementById('contactForm');if(form){form.addEventListener('submit', function(e){const btn = form.querySelector('button[type="submit"]');if(btn){btn.disabled = true;btn.textContent = 'Sending...';}setTimeout(()=>{ if(btn){ btn.disabled=false; btn.textContent='Send' } }, 3000);});}
