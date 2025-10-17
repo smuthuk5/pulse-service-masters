@@ -4,16 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Pulse Service Masters — Lawn mowers & Garden Equipment</title>
+  <meta name="description" content="Pulse Service Masters — Sales & servicing of lawn mowers, brush cutters, chainsaws, hedge trimmers and more." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="container header-row">
       <div class="brand">
-        <img src="assets/images/logo.svg" alt="Pulse Service Masters logo" class="logo" />
+        <img src="assets/images/logo.png" alt="Pulse Service Masters logo" class="logo" />
         <h1 class="site-title">Pulse Service Masters</h1>
       </div>
-      <nav class="nav">
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="services.html">Services</a>
@@ -23,48 +25,50 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main role="main">
+    <section class="hero" aria-label="Hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <h2>Sales & servicing for lawn mowers and garden tools</h2>
-          <p>We sell, maintain and repair quality lawn equipment — lawn mowers, brush cutters, chainsaws, hedge trimmers and more.</p>
+          <p>We sell, maintain and repair quality lawn equipment — lawn mowers, brush cutters, chainsaws, hedge trimmers and more. Fast service, genuine parts, and experienced technicians.</p>
           <div class="hero-ctas">
             <a href="products.html" class="btn">Shop Products</a>
             <a href="services.html" class="btn btn-secondary">Book Service</a>
           </div>
         </div>
-        <div class="hero-image">
-          <img src="assets/images/mower.svg" alt="Lawn mower">
-        </div>
+
+        <figure class="hero-image" aria-hidden="false">
+          <img src="assets/images/lawn-mower.jpg" alt="Lawn mower on grass">
+          <figcaption class="sr-only">Lawn mower — Pulse Service Masters</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="container preview-products">
+    <section class="container preview-products" aria-label="Featured products">
       <h3>Featured Products</h3>
       <div class="cards product-preview">
-        <article class="card product">
-          <img src="assets/images/brush-cutter.svg" alt="Brush cutter">
-          <h4>Brush Cutter</h4>
+        <article class="card product" aria-labelledby="p1">
+          <img src="assets/images/brush-cutter.jpg" alt="Brush cutter">
+          <h4 id="p1">Brush Cutter</h4>
           <p>Powerful and durable — ideal for tough grass and undergrowth.</p>
         </article>
 
-        <article class="card product">
-          <img src="assets/images/hedge-trimmer.svg" alt="Hedge trimmer">
-          <h4>Hedge Trimmer</h4>
+        <article class="card product" aria-labelledby="p2">
+          <img src="assets/images/hedge-trimmer.jpg" alt="Hedge trimmer">
+          <h4 id="p2">Hedge Trimmer</h4>
           <p>Precise cutting for neat hedges and shrubs.</p>
         </article>
 
-        <article class="card product">
-          <img src="assets/images/mower.svg" alt="Lawn mower">
-          <h4>Lawn Mower</h4>
+        <article class="card product" aria-labelledby="p3">
+          <img src="assets/images/lawn-mower.jpg" alt="Lawn mower">
+          <h4 id="p3">Lawn Mower</h4>
           <p>Reliable lawn mowers for small and large gardens.</p>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
       <div>
         <h4>Pulse Service Masters</h4>
@@ -82,6 +86,7 @@
         </ul>
       </div>
     </div>
+
     <div class="container copyright">
       <p>&copy; <span id="year"></span> Pulse Service Masters — All rights reserved.</p>
     </div>
