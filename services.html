@@ -1,5 +1,574 @@
+# Pulse Service Masters — Website (contact details updated)
+
+All site files for the multi-page static website have been updated with the contact details you provided (phone, address, email). Download or copy the files from this document and push them to your GitHub repository to publish via GitHub Pages.
+
+---
+
+## Folder structure
+
+```
+pulse-service-masters/
+├─ index.html
+├─ products.html
+├─ services.html
+├─ about.html
+├─ contact.html
+├─ styles.css
+├─ script.js
+├─ README.md
+└─ assets/
+   ├─ logo.png        (optional; placeholder)
+   └─ images/
+       ├─ mower.jpg
+       ├─ brush-cutter.jpg
+       └─ hedge-trimmer.jpg
+```
+
+---
+
+**Contact details used across pages**:
+
+* Phone: **98944 71387**
+* Address: **Plot No 216A, 3rd St, Kakkan Nagar, Adambakkam, Chennai, Tamil Nadu 600088**
+* Email: **[premraj1082@gmail.com](mailto:premraj1082@gmail.com)**
+
+---
+
+Below are the updated files. Copy each file into your project folder.
+
+---
+
+## index.html
+
+```html
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Services — Pulse Service Masters</title><link rel="stylesheet" href="styles.css" /></head>
-<body><header class="site-header"><div class="container header-row"><div class="brand"><img src="assets/images/logo.svg" alt="logo" class="logo"/><h1 class="site-title">Pulse Service Masters</h1></div>
-<nav class="nav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html" class="btn btn-outline">Contact</a></nav></div></header>
-<main class="container"><h2>Our Services</h2><div class="cards"><article class="card"><h3>Service & Repair</h3><p>Diagnostic, repair and parts replacement for all major brands.</p></article><article class="card"><h3>Scheduled Maintenance</h3><p>Preventive maintenance packages—blade sharpening, oil change, tune-ups.</p></article></div></main><footer class="site-footer"><div class="container copyright"><p>&copy; <span id="year"></span> Pulse Service Masters</p></div></footer><script src="script.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pulse Service Masters — Lawn mowers & Garden Equipment</title>
+  <meta name="description" content="Pulse Service Masters — Sales & servicing of lawn mowers, brush cutters, chainsaws, hedge trimmers and more." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Pulse Service Masters logo" class="logo" onerror="this.style.display='none'"/>
+        <h1 class="site-title">Pulse Service Masters</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2>Sales & servicing for lawn mowers and garden tools</h2>
+          <p>We sell, maintain and repair quality lawn equipment — lawn mowers, brush cutters, chainsaws, hedge trimmers and more. Fast service, genuine parts, and experienced technicians.</p>
+          <div class="hero-ctas">
+            <a href="products.html" class="btn">Shop Products</a>
+            <a href="services.html" class="btn btn-secondary">Book Service</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/mower.jpg" alt="Lawn mower" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <section class="container features">
+      <h3>Why choose Pulse Service Masters</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Experienced Technicians</h4>
+          <p>Our technicians have years of experience repairing garden equipment.</p>
+        </article>
+        <article class="card">
+          <h4>Genuine Parts</h4>
+          <p>We use OEM parts where possible to ensure reliability.</p>
+        </article>
+        <article class="card">
+          <h4>Fast Turnaround</h4>
+          <p>Quick diagnostics and timely repairs to get you back to work.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container preview-products">
+      <h3>Featured Products</h3>
+      <div class="cards product-preview">
+        <article class="card product">
+          <img src="assets/images/brush-cutter.jpg" alt="Brush cutter" onerror="this.style.display='none'">
+          <h4>Brush Cutter</h4>
+          <p>Powerful and durable — ideal for tough grass and undergrowth.</p>
+          <a href="products.html#brush-cutter" class="btn btn-sm">View</a>
+        </article>
+
+        <article class="card product">
+          <img src="assets/images/hedge-trimmer.jpg" alt="Hedge trimmer" onerror="this.style.display='none'">
+          <h4>Hedge Trimmer</h4>
+          <p>Precise cutting for neat hedges and shrubs.</p>
+          <a href="products.html#hedge-trimmer" class="btn btn-sm">View</a>
+        </article>
+
+        <article class="card product">
+          <img src="assets/images/mower.jpg" alt="Lawn mower" onerror="this.style.display='none'">
+          <h4>Lawn Mower</h4>
+          <p>Reliable lawn mowers for small and large gardens.</p>
+          <a href="products.html#mower" class="btn btn-sm">View</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Pulse Service Masters</h4>
+        <p>Sales, repair & servicing of garden equipment.</p>
+        <p><strong>Email:</strong> <a href="mailto:premraj1082@gmail.com">premraj1082@gmail.com</a></p>
+        <p><strong>Phone:</strong> 98944 71387</p>
+        <p><strong>Address:</strong> Plot No 216A, 3rd St, Kakkan Nagar, Adambakkam, Chennai, Tamil Nadu 600088</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; <span id="year"></span> Pulse Service Masters — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## products.html
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Pulse Service Masters</title>
+  <meta name="description" content="Product catalog — lawn mowers, brush cutters, chainsaws, hedge trimmers." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <h1 class="site-title">Pulse Service Masters</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Products</h2>
+    <p>Browse our selection of garden equipment. Click a product to view details or contact us for pricing and availability.</p>
+
+    <section id="mower" class="cards product-list">
+      <article class="card product">
+        <img src="assets/images/mower.jpg" alt="Lawn mower" onerror="this.style.display='none'">
+        <h3>Rear-Wheel Lawn Mower</h3>
+        <p>Durable petrol lawn mower for medium to large lawns. Powerful engine, easy start.</p>
+        <p><strong>Use:</strong> Residential & light commercial</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article id="brush-cutter" class="card product">
+        <img src="assets/images/brush-cutter.jpg" alt="Brush cutter" onerror="this.style.display='none'">
+        <h3>Brush Cutter</h3>
+        <p>Robust brush cutter for thick undergrowth and tough terrain.</p>
+        <p><strong>Use:</strong> Clearing, landscaping</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article id="hedge-trimmer" class="card product">
+        <img src="assets/images/hedge-trimmer.jpg" alt="Hedge trimmer" onerror="this.style.display='none'">
+        <h3>Hedge Trimmer</h3>
+        <p>Ergonomic and balanced trimmer for professional hedge maintenance.</p>
+        <p><strong>Use:</strong> Hedges, shrubs</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article id="chain-saw" class="card product">
+        <img src="assets/images/chain-saw.jpg" alt="Chainsaw" onerror="this.style.display='none'">
+        <h3>Chainsaw</h3>
+        <p>Reliable chainsaw for cutting wood, pruning and light tree work.</p>
+        <p><strong>Use:</strong> Pruning, cutting</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>&copy; <span id="year"></span> Pulse Service Masters</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## services.html
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Pulse Service Masters</title>
+  <meta name="description" content="Services — servicing, maintenance, parts replacement and warranty work for lawn equipment." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand"><h1 class="site-title">Pulse Service Masters</h1></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Our Services</h2>
+    <p>We provide full servicing and repair for garden equipment with genuine parts and warranty options.</p>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Service & Repair</h3>
+        <p>Diagnostic, repair and parts replacement for all major brands. We provide an estimate before work begins.</p>
+      </article>
+
+      <article class="card">
+        <h3>Scheduled Maintenance</h3>
+        <p>Preventive maintenance packages to keep equipment running smoothly—blade sharpening, oil change, tune-ups.</p>
+      </article>
+
+      <article class="card">
+        <h3>Parts & Accessories</h3>
+        <p>We stock blades, filters, spark plugs, belts and other consumables. We can order OEM parts on request.</p>
+      </article>
+
+      <article class="card">
+        <h3>On-site Service</h3>
+        <p>For larger equipment or commercial customers we offer on-site diagnostics and repairs (subject to availability).</p>
+      </article>
+    </div>
+
+    <p class="mt-2">To book a service, <a href="contact.html">contact us</a> with your product model and a short description of the issue.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>&copy; <span id="year"></span> Pulse Service Masters</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## about.html
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Pulse Service Masters</title>
+  <meta name="description" content="About Pulse Service Masters — our mission and team." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand"><h1 class="site-title">Pulse Service Masters</h1></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>About Us</h2>
+    <p>Pulse Service Masters started with one mission: keep gardens and green spaces looking their best by providing reliable equipment and top quality servicing. Our team has experience in sales, repair and maintenance for residential and commercial customers.</p>
+
+    <h3>Our values</h3>
+    <ul>
+      <li>Quality workmanship</li>
+      <li>Transparency in pricing</li>
+      <li>Customer-first service</li>
+      <li>Fast, reliable repairs</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>&copy; <span id="year"></span> Pulse Service Masters</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## contact.html
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Pulse Service Masters</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand"><h1 class="site-title">Pulse Service Masters</h1></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h2>Contact Us</h2>
+    <p>Fill the form below with product details or service request. We will get back to you.</p>
+
+    <!-- Replace the action URL with your Formspree endpoint -->
+    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Phone
+        <input type="tel" name="phone" placeholder="+91-9894471387">
+      </label>
+
+      <label>
+        Subject
+        <input type="text" name="subject" placeholder="e.g. Service request for Lawn Mower model X">
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-info mt-2">
+      <p><strong>Address:</strong> Plot No 216A, 3rd St, Kakkan Nagar, Adambakkam, Chennai, Tamil Nadu 600088</p>
+      <p><strong>Email:</strong> <a href="mailto:premraj1082@gmail.com">premraj1082@gmail.com</a></p>
+      <p><strong>Phone:</strong> 98944 71387</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>&copy; <span id="year"></span> Pulse Service Masters</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## styles.css
+
+```css
+:root{
+  --max-w:1100px;
+  --accent:#0b7a4d; /* change to your brand color */
+  --accent-2:#064e36;
+  --bg:#f7faf7;
+  --text:#0b1720;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);background:var(--bg);line-height:1.5}
+.container{max-width:var(--max-w);margin:0 auto;padding:1rem}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.75rem}
+.logo{height:46px}
+.site-title{margin:0;font-size:1.1rem;font-weight:700;color:var(--accent-2)}
+.site-header{background:white;box-shadow:0 1px 6px rgba(2,6,23,.06)}
+.nav a{margin-left:1rem;text-decoration:none;color:inherit;padding:.35rem .5rem;border-radius:6px}
+.nav a:hover{background:rgba(0,0,0,0.03)}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;background:var(--accent);color:white;text-decoration:none;border:none;cursor:pointer}
+.btn-outline{border:1px solid rgba(0,0,0,0.08);padding:.5rem .8rem;border-radius:8px}
+.btn-sm{padding:.4rem .6rem;font-size:.9rem}
+.btn-secondary{background:transparent;color:var(--accent-2);border:1px solid var(--accent);}
+
+.hero{padding:2.2rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:1rem;align-items:center}
+.hero h2{font-size:1.8rem;margin:0 0 .5rem}
+.hero p{margin:0 0 1rem;color:#334155}
+.hero-image img{width:100%;border-radius:8px;object-fit:cover}
+
+.features .cards, .product-list, .cards.product-preview {display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1rem}
+.card{background:white;padding:1rem;border-radius:8px;box-shadow:0 1px 6px rgba(2,6,23,.04)}
+.card h3, .card h4{margin:.25rem 0 .5rem}
+.product img{width:100%;height:160px;object-fit:cover;border-radius:6px}
+
+footer.site-footer{margin-top:2rem;background:#fff;padding:1.5rem 0;border-top:1px solid #eef2e9}
+.footer-grid{display:grid;grid-template-columns:1fr 220px;gap:1rem}
+.footer-links{list-style:none;padding:0;margin:0}
+.footer-links li{margin-bottom:.3rem}
+
+.contact-page label{display:block;margin-bottom:.6rem}
+.contact-page input,.contact-page textarea{width:100%;padding:.6rem;border:1px solid #e7eee6;border-radius:6px;margin-top:.35rem}
+.mt-2{margin-top:1rem}
+.copyright{text-align:center;color:#64748b;font-size:.9rem;margin-top:0.75rem}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .header-row{flex-direction:column;align-items:flex-start}
+}
+```
+
+---
+
+## script.js
+
+```js
+// small helper for year and simple form UX
+document.getElementById('year')?.textContent = new Date().getFullYear();
+
+const form = document.getElementById('contactForm');
+if(form){
+  form.addEventListener('submit', function(e){
+    // simple native behavior: let Formspree handle submit
+    // optionally show a quick message (no AJAX here)
+    const btn = form.querySelector('button[type="submit"]');
+    if(btn){
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+    }
+    // after submission the page will reload / redirect depending on Formspree settings
+    setTimeout(()=>{ if(btn){ btn.disabled=false; btn.textContent='Send Message' } }, 4000);
+  });
+}
+```
+
+---
+
+## README.md
+
+````md
+# Pulse Service Masters — Static site
+
+## Quick start (local)
+1. Place files in a folder and open `index.html` in browser to preview.
+2. To run a local server:
+   - Python 3: `python3 -m http.server 8000` and visit `http://localhost:8000`.
+
+## Deploy to GitHub Pages
+1. Create a new GitHub repo (e.g. `pulse-service-masters`).
+2. Commit and push all files to `main` branch.
+3. In GitHub repo => Settings => Pages:
+   - Source: `main` branch, folder: `/ (root)`.
+   - Save. GitHub will publish at `https://<your-github-username>.github.io/pulse-service-masters/`.
+4. (Optional) Add a custom domain in Pages settings and update DNS.
+
+### Git commands (example)
+```bash
+git init
+git add .
+git commit -m "Initial Pulse Service Masters site"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/pulse-service-masters.git
+git push -u origin main
+````
+
+## Contact form
+
+* This site uses **Formspree** for the contact form. Sign up at [https://formspree.io](https://formspree.io), create a form and replace the `action` attribute in `contact.html` with the Formspree endpoint (e.g. `https://formspree.io/f/xxxxx`).
+
+## Notes
+
+* Replace placeholder images in `assets/images/`.
+* Update contact email & phone in each page.
+* For analytics add GA4 script in `index.html` head.
+
+```
+
+---
+
+If you want, I can:
+
+- create a ZIP file of the site and provide a download link, or
+- prepare the exact git commands to create the repo and push the files (I will provide the commands you can run locally), or
+- update the Formspree endpoint for you if you create one and paste the ID here.
+
+Tell me which of the three you want next and I’ll proceed.
+
+```
