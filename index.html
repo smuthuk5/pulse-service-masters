@@ -1,52 +1,114 @@
-<section class="container preview-products" aria-label="Featured products">
-  <h3>Featured Products</h3>
-  <div class="cards product-preview grid-2rows">
-    <article class="card product" aria-labelledby="p1">
-      <img src="assets/images/brush-cutter.jpg" alt="Brush cutter">
-      <h4 id="p1">Brush Cutter</h4>
-      <p>Powerful and durable — ideal for tough grass and undergrowth.</p>
-    </article>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Pulse Service Masters</title>
+  <meta name="description" content="Product catalog — lawn mowers, brush cutters, chainsaws, hedge trimmers." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <h1 class="site-title">Pulse Service Masters</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <article class="card product" aria-labelledby="p2">
-      <img src="assets/images/hedge-trimmer.jpg" alt="Hedge trimmer">
-      <h4 id="p2">Hedge Trimmer</h4>
-      <p>Precise cutting for neat hedges and shrubs.</p>
-    </article>
+  <main class="container">
+    <h2>Products</h2>
+    <p>Browse our selection of garden equipment. Click a product to view details or contact us for pricing and availability.</p>
 
-    <article class="card product" aria-labelledby="p3">
-      <img src="assets/images/lawn-mower.jpg" alt="Lawn mower">
-      <h4 id="p3">Lawn Mower</h4>
-      <p>Reliable lawn mowers for small and large gardens.</p>
-    </article>
+    <section id="mower" class="cards product-list">
+      <article class="card product">
+        <img src="assets/images/mower.jpg" alt="Lawn mower" onerror="this.style.display='none'">
+        <h3>Rear-Wheel Lawn Mower</h3>
+        <p>Durable petrol lawn mower for medium to large lawns. Powerful engine, easy start.</p>
+        <p><strong>Use:</strong> Residential & light commercial</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
 
-    <article class="card product" aria-labelledby="p4">
-      <img src="assets/images/tiller.jpg" alt="Garden Tiller">
-      <h4 id="p4">Garden Tiller</h4>
-      <p>Compact tiller designed to loosen soil and prepare garden beds efficiently.</p>
-    </article>
+      <article id="brush-cutter" class="card product">
+        <img src="assets/images/brush-cutter.jpg" alt="Brush cutter" onerror="this.style.display='none'">
+        <h3>Brush Cutter</h3>
+        <p>Robust brush cutter for thick undergrowth and tough terrain.</p>
+        <p><strong>Use:</strong> Clearing, landscaping</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
 
-    <article class="card product" aria-labelledby="p5">
-      <img src="assets/images/sprayer.jpg" alt="Power Sprayer">
-      <h4 id="p5">Power Sprayer</h4>
-      <p>High-performance sprayer for applying fertilizers, pesticides, and herbicides.</p>
-    </article>
+      <article id="hedge-trimmer" class="card product">
+        <img src="assets/images/hedge-trimmer.jpg" alt="Hedge trimmer" onerror="this.style.display='none'">
+        <h3>Hedge Trimmer</h3>
+        <p>Ergonomic and balanced trimmer for professional hedge maintenance.</p>
+        <p><strong>Use:</strong> Hedges, shrubs</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
 
-    <article class="card product" aria-labelledby="p6">
-      <img src="assets/images/fogging-machine.jpg" alt="Fogging Machine">
-      <h4 id="p6">Fogging Machine</h4>
-      <p>Portable fogging machine for pest control, disinfection, and sanitization.</p>
-    </article>
+      <article id="chain-saw" class="card product">
+        <img src="assets/images/chain-saw.jpg" alt="Chainsaw" onerror="this.style.display='none'">
+        <h3>Chainsaw</h3>
+        <p>Reliable chainsaw for cutting wood, pruning and light tree work.</p>
+        <p><strong>Use:</strong> Pruning, cutting</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
 
-    <article class="card product" aria-labelledby="p7">
-      <img src="assets/images/garden-tools.jpg" alt="Garden Tools Kit">
-      <h4 id="p7">Garden Tools Kit</h4>
-      <p>Essential toolkit including spade, rake, trowel, and pruning shears for everyday gardening.</p>
-    </article>
+      <!-- New Products -->
+      <article id="leaf-blower" class="card product">
+        <img src="assets/images/leaf-blower.jpg" alt="Leaf Blower" onerror="this.style.display='none'">
+        <h3>Leaf Blower</h3>
+        <p>Powerful handheld leaf blower for quick and easy yard cleanup.</p>
+        <p><strong>Use:</strong> Gardens, driveways, patios</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
 
-    <article class="card product" aria-labelledby="p8">
-      <img src="assets/images/heavy-chainsaw.jpg" alt="Heavy-duty Chainsaw">
-      <h4 id="p8">Heavy-Duty Chainsaw</h4>
-      <p>Industrial-grade chainsaw ideal for forestry and professional woodcutting applications.</p>
-    </article>
-  </div>
-</section>
+      <article id="pressure-washer" class="card product">
+        <img src="assets/images/pressure-washer.jpg" alt="Pressure Washer" onerror="this.style.display='none'">
+        <h3>Pressure Washer</h3>
+        <p>High-pressure washer for cleaning vehicles, outdoor furniture, and pavements.</p>
+        <p><strong>Use:</strong> Residential & commercial cleaning</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article id="garden-vacuum" class="card product">
+        <img src="assets/images/garden-vacuum.jpg" alt="Garden Vacuum" onerror="this.style.display='none'">
+        <h3>Garden Vacuum</h3>
+        <p>Lightweight vacuum for collecting leaves and small debris efficiently.</p>
+        <p><strong>Use:</strong> Lawn and garden maintenance</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article id="tiller" class="card product">
+        <img src="assets/images/tiller.jpg" alt="Garden Tiller" onerror="this.style.display='none'">
+        <h3>Garden Tiller</h3>
+        <p>Powerful tiller for loosening soil and preparing garden beds.</p>
+        <p><strong>Use:</strong> Gardening & landscaping</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article id="water-pump" class="card product">
+        <img src="assets/images/water-pump.jpg" alt="Water Pump" onerror="this.style.display='none'">
+        <h3>Portable Water Pump</h3>
+        <p>Reliable water pump ideal for irrigation, draining, and water transfer.</p>
+        <p><strong>Use:</strong> Farms, gardens, construction sites</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>&copy; <span id="year"></span> Pulse Service Masters</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
