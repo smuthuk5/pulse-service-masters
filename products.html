@@ -1,23 +1,71 @@
-<article class="card product">
-  <img src="assets/images/lawn-mower.jpg" alt="Lawn Mower">
-  <h3>Rear-Wheel Lawn Mower</h3>
-  <p>Durable petrol lawn mower for medium to large lawns.</p>
-</article>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Pulse Service Masters</title>
+  <meta name="description" content="Product catalog — lawn mowers, brush cutters, chainsaws, hedge trimmers." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Pulse Service Masters logo" class="logo" />
+        <h1 class="site-title">Pulse Service Masters</h1>
+      </div>
 
-<article class="card product">
-  <img src="assets/images/brush-cutter.jpg" alt="Brush Cutter">
-  <h3>Brush Cutter</h3>
-  <p>Robust brush cutter for thick undergrowth.</p>
-</article>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<article class="card product">
-  <img src="assets/images/hedge-trimmer.jpg" alt="Hedge Trimmer">
-  <h3>Hedge Trimmer</h3>
-  <p>Ergonomic trimmer for professional maintenance.</p>
-</article>
+  <main class="container">
+    <h2>Products</h2>
+    <p>Browse our selection of garden equipment. Click a product to view details or contact us for pricing and availability.</p>
 
-<article class="card product">
-  <img src="assets/images/chain-saw.jpg" alt="Chainsaw">
-  <h3>Chainsaw</h3>
-  <p>Reliable chainsaw for pruning and cutting.</p>
-</article>
+    <section class="cards product-list" aria-label="Product list">
+      <article class="card product" id="mower">
+        <img src="assets/images/lawn-mower.jpg" alt="Rear-wheel lawn mower" />
+        <h3>Rear-Wheel Lawn Mower</h3>
+        <p>Durable petrol lawn mower for medium to large lawns. Powerful engine and easy start.</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article class="card product" id="brush-cutter">
+        <img src="assets/images/brush-cutter.jpg" alt="Brush cutter" />
+        <h3>Brush Cutter</h3>
+        <p>Robust brush cutter for thick undergrowth and tough terrain.</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article class="card product" id="hedge-trimmer">
+        <img src="assets/images/hedge-trimmer.jpg" alt="Hedge trimmer" />
+        <h3>Hedge Trimmer</h3>
+        <p>Ergonomic and balanced trimmer for professional hedge maintenance.</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+
+      <article class="card product" id="chain-saw">
+        <img src="assets/images/chain-saw.jpg" alt="Chainsaw" />
+        <h3>Chainsaw</h3>
+        <p>Reliable chainsaw for cutting wood, pruning and light tree work.</p>
+        <a href="contact.html" class="btn">Request Quote</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>&copy; <span id="year"></span> Pulse Service Masters</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
