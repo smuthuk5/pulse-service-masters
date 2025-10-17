@@ -1,27 +1,52 @@
-/* Featured products 2-row grid */
-.product-preview.grid-2rows {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
+<section class="container preview-products" aria-label="Featured products">
+  <h3>Featured Products</h3>
+  <div class="cards product-preview grid-2rows">
+    <article class="card product" aria-labelledby="p1">
+      <img src="assets/images/brush-cutter.jpg" alt="Brush cutter">
+      <h4 id="p1">Brush Cutter</h4>
+      <p>Powerful and durable — ideal for tough grass and undergrowth.</p>
+    </article>
 
-.product-preview.grid-2rows .card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+    <article class="card product" aria-labelledby="p2">
+      <img src="assets/images/hedge-trimmer.jpg" alt="Hedge trimmer">
+      <h4 id="p2">Hedge Trimmer</h4>
+      <p>Precise cutting for neat hedges and shrubs.</p>
+    </article>
 
-.product-preview.grid-2rows .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
+    <article class="card product" aria-labelledby="p3">
+      <img src="assets/images/lawn-mower.jpg" alt="Lawn mower">
+      <h4 id="p3">Lawn Mower</h4>
+      <p>Reliable lawn mowers for small and large gardens.</p>
+    </article>
 
-.product-preview.grid-2rows img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
-  border-radius: 4px;
-}
+    <article class="card product" aria-labelledby="p4">
+      <img src="assets/images/tiller.jpg" alt="Garden Tiller">
+      <h4 id="p4">Garden Tiller</h4>
+      <p>Compact tiller designed to loosen soil and prepare garden beds efficiently.</p>
+    </article>
+
+    <article class="card product" aria-labelledby="p5">
+      <img src="assets/images/sprayer.jpg" alt="Power Sprayer">
+      <h4 id="p5">Power Sprayer</h4>
+      <p>High-performance sprayer for applying fertilizers, pesticides, and herbicides.</p>
+    </article>
+
+    <article class="card product" aria-labelledby="p6">
+      <img src="assets/images/fogging-machine.jpg" alt="Fogging Machine">
+      <h4 id="p6">Fogging Machine</h4>
+      <p>Portable fogging machine for pest control, disinfection, and sanitization.</p>
+    </article>
+
+    <article class="card product" aria-labelledby="p7">
+      <img src="assets/images/garden-tools.jpg" alt="Garden Tools Kit">
+      <h4 id="p7">Garden Tools Kit</h4>
+      <p>Essential toolkit including spade, rake, trowel, and pruning shears for everyday gardening.</p>
+    </article>
+
+    <article class="card product" aria-labelledby="p8">
+      <img src="assets/images/heavy-chainsaw.jpg" alt="Heavy-duty Chainsaw">
+      <h4 id="p8">Heavy-Duty Chainsaw</h4>
+      <p>Industrial-grade chainsaw ideal for forestry and professional woodcutting applications.</p>
+    </article>
+  </div>
+</section>
