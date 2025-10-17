@@ -1,128 +1,27 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pulse Service Masters — Lawn mowers & Garden Equipment</title>
-  <meta name="description" content="Pulse Service Masters — Sales & servicing of lawn mowers, brush cutters, chainsaws, hedge trimmers and more." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header" role="banner">
-    <div class="container header-row">
-      <div class="brand">
-        <img src="assets/images/logo.png" alt="Pulse Service Masters logo" class="logo" />
-        <h1 class="site-title">Pulse Service Masters</h1>
-      </div>
+/* Featured products 2-row grid */
+.product-preview.grid-2rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
 
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="btn btn-outline">Contact</a>
-      </nav>
-    </div>
-  </header>
+.product-preview.grid-2rows .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  <main role="main">
-    <section class="hero" aria-label="Hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h2>Sales & servicing for lawn mowers and garden tools</h2>
-          <p>We sell, maintain and repair quality lawn equipment — lawn mowers, brush cutters, chainsaws, hedge trimmers and more. Fast service, genuine parts, and experienced technicians.</p>
-          <div class="hero-ctas">
-            <a href="products.html" class="btn">Shop Products</a>
-            <a href="services.html" class="btn btn-secondary">Book Service</a>
-          </div>
-        </div>
+.product-preview.grid-2rows .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
-        <figure class="hero-image" aria-hidden="false">
-          <img src="assets/images/lawn-mower.jpg" alt="Lawn mower on grass">
-          <figcaption class="sr-only">Lawn mower — Pulse Service Masters</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="container preview-products" aria-label="Featured products">
-      <h3>Featured Products</h3>
-      <div class="cards product-preview">
-        <article class="card product" aria-labelledby="p1">
-          <img src="assets/images/brush-cutter.jpg" alt="Brush cutter">
-          <h4 id="p1">Brush Cutter</h4>
-          <p>Powerful and durable — ideal for tough grass and undergrowth.</p>
-        </article>
-
-        <article class="card product" aria-labelledby="p2">
-          <img src="assets/images/hedge-trimmer.jpg" alt="Hedge trimmer">
-          <h4 id="p2">Hedge Trimmer</h4>
-          <p>Precise cutting for neat hedges and shrubs.</p>
-        </article>
-
-        <article class="card product" aria-labelledby="p3">
-          <img src="assets/images/lawn-mower.jpg" alt="Lawn mower">
-          <h4 id="p3">Lawn Mower</h4>
-          <p>Reliable lawn mowers for small and large gardens.</p>
-        </article>
-
-        <!-- New Products -->
-        <article class="card product" aria-labelledby="p4">
-          <img src="assets/images/tiller.jpg" alt="Garden Tiller">
-          <h4 id="p4">Garden Tiller</h4>
-          <p>Compact tiller designed to loosen soil and prepare garden beds efficiently.</p>
-        </article>
-
-        <article class="card product" aria-labelledby="p5">
-          <img src="assets/images/sprayer.jpg" alt="Power Sprayer">
-          <h4 id="p5">Power Sprayer</h4>
-          <p>High-performance sprayer for applying fertilizers, pesticides, and herbicides.</p>
-        </article>
-
-        <article class="card product" aria-labelledby="p6">
-          <img src="assets/images/fogging-machine.jpg" alt="Fogging Machine">
-          <h4 id="p6">Fogging Machine</h4>
-          <p>Portable fogging machine for pest control, disinfection, and sanitization.</p>
-        </article>
-
-        <article class="card product" aria-labelledby="p7">
-          <img src="assets/images/garden-tools.jpg" alt="Garden Tools Kit">
-          <h4 id="p7">Garden Tools Kit</h4>
-          <p>Essential toolkit including spade, rake, trowel, and pruning shears for everyday gardening.</p>
-        </article>
-
-        <article class="card product" aria-labelledby="p8">
-          <img src="assets/images/heavy-chainsaw.jpg" alt="Heavy-duty Chainsaw">
-          <h4 id="p8">Heavy-Duty Chainsaw</h4>
-          <p>Industrial-grade chainsaw ideal for forestry and professional woodcutting applications.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div>
-        <h4>Pulse Service Masters</h4>
-        <p><strong>Email:</strong> <a href="mailto:premraj1082@gmail.com">premraj1082@gmail.com</a></p>
-        <p><strong>Phone:</strong> 98944 71387</p>
-        <p><strong>Address:</strong> Plot No 216A, 3rd St, Kakkan Nagar, Adambakkam, Chennai, Tamil Nadu 600088</p>
-      </div>
-      <div>
-        <h4>Quick links</h4>
-        <ul class="footer-links">
-          <li><a href="products.html">Products</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container copyright">
-      <p>&copy; <span id="year"></span> Pulse Service Masters — All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+.product-preview.grid-2rows img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
